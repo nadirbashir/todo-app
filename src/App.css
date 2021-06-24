@@ -1,7 +1,23 @@
-.App {
-  text-align: center;
+.App{
+    padding-top: 100px;
 }
-li{
-  list-style: none;
-  background-color: aquamarine;
+.main{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.list-item{
+    display: flex;
+    justify-content: space-around !important;
+    box-shadow: 2px 2px 2px #efefefea;
+}
+.list-item > p{
+    width: 300px;
+}
+#standard-basic{
+    width: 300px;
+    border-bottom: 2px solid #3f51b5 !important;
+}
+#outlined-basic{
+    width: 300px;
 }
