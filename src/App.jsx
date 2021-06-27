@@ -63,20 +63,20 @@ class App extends React.Component {
     return (
       <Container fixed className="App">
         <div className = "main">
+        
+        {/* list section */}
+        <div className = "list-section">
+        <List>
         <h1>Todo Application</h1>
         {/* add todo section */}
-        <div className = "list-item">
-          <TextField id="outlined-basic" label="Add todo" variant="outlined" 
+        <ListItem className = "add-todo">
+        <TextField id="standard-basic" label="Add todo" variant="standard" 
             type="text"
             value={value}
             onChange={(e) => this.setState({ value: e.target.value })}
             />
           <Button variant = "outlined" size="small" color = "primary" onClick={this.add_todo}>Add todo</Button>
-          
-        </div>
-        {/* list section */}
-        <div className = "list-section">
-        <List>
+        </ListItem>
           {todos.map((val, ind) => {
             return (
               <ListItem className = "list-item" key={ind}>
